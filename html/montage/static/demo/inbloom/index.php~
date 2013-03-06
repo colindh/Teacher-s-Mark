@@ -1,0 +1,18 @@
+<?php
+session_start();
+
+        const CLIENT_ID = 'gNbOiOHhJh';
+        const CLIENT_SECRET = 'vV5mM1yUc5WZRl9Sy4vYW2UPLdfLf11Q8PpSiCNTXMKaLUIQ';
+
+        const REDIRECT_URI = 'https://localhost/inBloom/home.php';
+        const AUTHORIZATION_ENDPOINT = 'https://api.sandbox.inbloom.org/api/oauth/authorize';
+        const TOKEN_ENDPOINT = 'https://api.sandbox.inbloom.org/api/oauth/token';
+
+
+// If the session verification code is not set, redirect to the SLC Sandbox authorization endpoint
+if (!isset($_GET['code'])) {
+  $url = 'https://api.sandbox.inbloom.org/api/oauth/authorize?client_id=' . CLIENT_ID . '&redirect_uri=' . REDIRECT_URI;
+  header('Location: ' . $url);
+  die('Redirect');
+}
+?>

@@ -1,0 +1,29 @@
+CACHE MANIFEST
+# Version 0.1.7
+
+NETWORK:
+*
+
+CACHE:
+# css files
+../static/stylesheets/iphone.css
+
+# js files
+../static/scripts/library.js
+../static/scripts/iphone.js
+
+
+# images
+../static/images/icon@2x.png
+../static/images/retina_splash.png
+../static/images/noise@2x.png
+../static/images/noise_mask.png
+../static/images/linen-small.png
+../static/images/icon-check-white.png
+../static/images/icon-check.png
+../static/demo/avatar92.jpg
+../static/demo/obama.jpg
+../static/demo/boy_avatar.jpg
+
+# glyphs
+../static/glyphs/original/icon.ttf

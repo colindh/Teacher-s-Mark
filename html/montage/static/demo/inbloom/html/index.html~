@@ -1,0 +1,82 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale = 1, minimum-scale = 1, maximum-scale = 1, width=device-width" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>Teacher's Mark</title>
+	<link rel="stylesheet" href="static/stylesheets/app.css">
+	<script src="static/scripts/library.js"></script>
+	<script src="static/scripts/app.js"></script>
+	<script src="static/scripts/initialize.js"></script>
+	<script src="static/scripts/underscore-min.js"></script>
+
+
+	<!-- Begin SpeakPipe code -->
+	<script type="text/javascript">
+	(function(d){
+	var app = d.createElement('script'); app.type = 'text/javascript'; app.async = true;
+	var pt = ('https:' == document.location.protocol ? 'https://' : 'http://');
+	app.src = pt + 'www.speakpipe.com/loader/uzk8uhyehyk7m2c3dzzhcys0uqm6dxzb.js'; 
+	var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(app, s);
+	})(document);
+	</script>
+	<!-- End SpeakPipe code -->
+</head>
+<body class="">
+
+	<div id="stream">
+		
+		<div class="con">
+			
+			<ul id="classes" class="tile sublist">
+				<li><button class="adrift glyph write">9am class</button></li>
+				<li><button class="adrift glyph write">10am class</button></li>
+				<li><button class="adrift glyph write">1pm class</button></li>
+				<li><button class="adrift glyph write">2pm class</button></li>
+				<li><button class="adrift glyph write">3pm class</button></li>
+			</ul>
+
+			<a class="tile" id="article">
+				<span class="vector">C</span>
+				<span class="title"><strong>Reports</strong></span>
+				<span class="desc"><strong>Student</strong> logs</span>
+			</a>
+			<a class="tile" href="#location" id="recent">
+				<span class="vector">N</span>
+				<span class="title"><strong>Flows</strong></span>
+				<span class="desc"><strong>Format</strong> messages</span>
+			</a>
+			<div>
+				<img src="static/images/BlueBird1.png" alt="help" width="100" align="right">
+			</div>
+		</div>
+	</div>
+	<div id="dashboard">
+		<ul id="students">
+			<li><button class="white"><img src="static/images/genericPic.png" width="50"> Abrams, J.</button></li>
+			<li><button class="white"><img src="static/images/genericPic.png" width="50"> Cook, B.</button></li>
+			<li><button class="white"><img src="static/images/genericPic.png" width="50"> Cox, A.</button></li>
+				<li><button class="white"><img src="static/images/genericPic.png" width="50"> Davis, M.</button></li>
+				<li><button class="white"><img src="static/images/genericPic.png" width="50"> Edwards, B.</button></li>
+				<li><button class="white"><img src="static/images/genericPic.png" width="50"> Evans, C.</button></li>
+				<li><button class="white"><img src="static/images/genericPic.png" width="50"> Griffin, M.</button></li>
+				<li><button class="white"><img src="static/images/genericPic.png" width="50"> Hudson, A.</button></li>
+				<li><button class="white"><img src="static/images/genericPic.png" width="50"> Knight, C.</button></li>
+				<li><button class="white"><img src="static/images/genericPic.png" width="50"> Lane, B.</button></li>
+				<li><button class="white"><img src="static/images/genericPic.png" width="50"> Medina, C.</button></li>
+				<li><button class="white"><img src="static/images/genericPic.png" width="50"> Silva, E.</button></li>
+				<li><button class="white"><img src="static/images/genericPic.png" width="50"> Vargas, F.</button></li>
+			</ul>
+	</div>
+	<div id="footer">
+		<div class="con">
+			<h4>Teacher's Mark <span class="feather animated fadeIn">Feather</span> <span class="theme">Easing student tracking for teachers and parents.</span></h4>
+		</div>
+	</div>
+</body>
+</html>

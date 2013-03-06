@@ -1,0 +1,92 @@
+<?php
+/*        const CLIENT_ID = 'j6juqRE4Ew';
+        const CLIENT_SECRET = 'PzFfzVTstxgqSfj6ihM4pYlW9XVr9dul8MoPTX1Sdy2PkXGi';
+
+        const REDIRECT_URI = 'http://localhost/tokengrabber.php';
+        const AUTHORIZATION_ENDPOINT = 'https://api.sandbox.inbloom.org/api/oauth/authorize';
+        const TOKEN_ENDPOINT = 'https://api.sandbox.inbloom.org/api/oauth/token';
+
+ $url = 'https://api.sandbox.inbloom.org/api/oauth/token?client_id=' . CLIENT_ID . '&client_secret=' . CLIENT_SECRET . '&grant_type=authorization_code&redirect_uri=' . REDIRECT_URI . '&code=' . $_GET['code'];
+
+  $ch = curl_init();
+
+//set the url, number of POST vars, POST data
+  curl_setopt($ch, CURLOPT_URL, $url);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+  curl_setopt($ch, CURLOPT_HEADER, 'Content-Type: application/vnd.slc+json');
+  curl_setopt($ch, CURLOPT_HEADER, 'Accept: application/vnd.slc+json');
+
+//execute post
+
+  $result = curl_exec($ch);
+*/
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+		var oAuth = <?php echo $result; ?>;
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale = 1, minimum-scale = 1, maximum-scale = 1, width=device-width" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>Teacher's Mark</title>
+	<link rel="stylesheet" href="static/stylesheets/app.css">
+	<script src="static/scripts/library.js"></script>
+	<script src="static/scripts/app.js"></script>
+	<script src="static/scripts/initialize.js"></script>
+	<script src="static/scripts/underscore-min.js"></script>
+
+</head>
+<body class="">
+
+	<div id="stream">
+		
+		<div class="con">
+			
+			<ul id="classes" class="tile sublist">
+				<li><button>Class 1</button></li>
+				<li><button>Class 2</button></li>
+				<li><button>Class 3</button></li>
+				<li><button>Class 4</button></li>
+				<li><button>Class 5</button></li>
+			</ul>
+
+			<a class="tile" id="article">
+				<span class="vector">C</span>
+				<span class="title"><strong>Reports</strong></span>
+				<span class="desc"><strong>Student</strong> logs</span>
+			</a>
+			<a class="tile" href="#location" id="recent">
+				<span class="vector">N</span>
+				<span class="title"><strong>Flows</strong></span>
+				<span class="desc"><strong>Format</strong> messages</span>
+			</a>
+		</div>
+	</div>
+	<div id="dashboard">
+		<div id="students">
+			<ul class="studentList">
+				<li><button>Student 1</button></li>
+				<li><button>Student 2</button></li>
+				<li><button>Student 3</button></li>
+				<li><button>Student 4</button></li>
+				<li><button>Student 5</button></li>
+				<li><button>Student 6</button></li>
+				<li><button>Student 7</button></li>
+				<li><button>Student 8</button></li>
+				<li><button>Student 9</button></li>
+				<li><button>Student 10</button></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="con">
+			<h4>Teacher's Mark <span class="feather animated fadeIn">Feather</span> <span class="theme">Easing student tracking for teachers and parents.</span></h4>
+		</div>
+	</div>
+</body>
+</html>

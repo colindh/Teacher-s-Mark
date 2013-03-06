@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.manifest">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale = 1, minimum-scale = 1, maximum-scale = 1, width=device-width" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="../static/stylesheets/iphone.css">
+	<link rel="apple-touch-icon-precomposed" href="../static/images/icon@2x.png" />
+	<link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="../static/images/retina_splash.png" />
+	<script src="../static/scripts/library.js"></script>
+	<script src="../static/scripts/iphone.js"></script>
+	<!--<script src="static/scripts/app.js"></script>-->
+</head>
+<body>
+	<section id="app">
+		<div id="toolbar">
+			<h2>Dashboard</h2>
+			<a id="update" class="button disabled">Update</a>
+			<a class="button right" href="#about">About</a>
+		</div>
+		<div id="scroll">
+			<section id="home" class="current">
+				<div class="chart">
+					<div id="chart_linear"></div>
+				</div>
+				<ul class="rounded">
+					<li id="gallery" class="glyph visitors"><strong>830,345</strong> visitors</li>
+					<li class="glyph umbrella"><strong>7,345,783</strong> page views</li>
+					<li class="glyph maping"><strong>Berlin</strong> most popular city</li>
+					<li class="glyph bounce"><strong>45.6%</strong> bounce rate</li>
+					<li class="glyph plus" id="create">Tap here to create a <strong>notification</strong></li>
+					<li>Lorem ipsum</li>
+				</ul>
+			</section>
+			<section id="chat">
+				<div class="comments">
+			        <div class="com-con grey">
+							<div class="comment">
+							      <p>Hey. Copenhagen any good?</p>
+							      <div class="avatar" style="background-image:url(../static/demo/avatar92.jpg)"></div>
+							 </div>
+							 <div class="byline"><strong>Jacques</strong> 4 days ago</div>
+						</div>
+					<div class="com-con grey">
+							  <div class="comment">
+							        <p>?</p>
+							        <div class="avatar" style="background-image:url(../static/demo/avatar92.jpg)"></div>
+							   </div>
+							   <div class="byline"><strong>Jacques</strong> 2 hours ago</div>
+						</div>
+					<div class="com-con right sunlit ">
+							   <div class="comment">
+							         <p>Yeah CPH is great. Should we plan a Europe/Christmas tour?</p>
+							         <div class="avatar" style="background-image:url(../static/demo/obama.jpg)"></div>
+							    </div>
+							    <div class="byline"><strong>You</strong> An hour ago</div>
+						</div>
+					<div class="com-con grey">
+							<div class="comment">
+							      <p>Oh yes. I think it's a great city, but I really want to visit the Carlsberg area next time..</p>
+							      <div class="avatar" style="background-image:url(../static/demo/avatar92.jpg)"></div>
+							 </div>
+							 <div class="byline"><strong>Jacques</strong> 2 sec. ago</div>
+						</div>
+					<div class="com-con right sunlit">
+							  <div class="comment">
+							        <p>Donec sem mi, faucibus ac consectetur in, bibendum eget massa.
+							        Nulla at imperdiet magna. </p>
+							        <div class="avatar" style="background-image:url(../static/demo/obama.jpg)"></div>
+							   </div>
+							   <div class="byline"><strong>You</strong> <span class="time" title="timestamp goes here">Just now</span></div>
+						</div>
+					<div class="com-con right sunlit">
+							  <div class="comment">
+							        <p>*London </p>
+							        <div class="avatar" style="background-image:url(../static/demo/obama.jpg)"></div>
+							   </div>
+							   <div class="byline"><strong>You</strong> Just now</div>
+						</div>
+			    </div>
+			</section>
+			<section id="maps"></section>
+			<section id="todo">
+				<ul>
+					<li class="layer">
+						<ul>
+							<li class="todo unchecked">Try clicking on an item</li>
+							<li>The Alternative Dimension</li>
+						</ul>
+					</li>
+					<li class="layer">
+						<ul>
+							<li class="todo checked">Something pretty cool will be revealed</li>
+							<li>Layer 2</li>
+						</ul>
+					</li>
+					<li class="layer">
+						<ul>
+							<li class="todo unchecked">But <strong>only</strong> if you have a modern browser</li>
+							<li>Layer 2</li>
+						</ul>
+					</li>
+					<li class="layer">
+						<ul>
+							<li class="todo unchecked">Well it will still be revealed</li>
+							<li>Layer 2</li>
+						</ul>
+					</li>
+					<li class="layer">
+						<ul>
+							<li class="todo checked">Just without a fancy animation</li>
+							<li>Layer 2</li>
+						</ul>
+					</li>
+					<li class="layer">
+						<ul>
+							<li class="todo checked">You can use a to-do list to keep track of stuff</li>
+							<li>Layer 2</li>
+						</ul>
+					</li>
+					<li class="layer">
+						<ul>
+							<li class="todo unchecked">Lorem ipsum dolor</li>
+							<li>Layer 2</li>
+						</ul>
+					</li>
+					<li class="layer">
+						<ul>
+							<li class="todo checked">It's really easy</li>
+							<li>Layer 2</li>
+						</ul>
+					</li>
+					<li class="layer">
+						<ul>
+							<li class="todo checked">And really simple</li>
+							<li>Layer 2</li>
+						</ul>
+					</li>
+					<li class="layer">
+						<ul>
+							<li class="todo checked">Good luck with Pastel!</li>
+							<li>Layer 2</li>
+						</ul>
+					</li>									
+				</ul>
+			</section>
+		</div>
+		<div id="bottom">
+			<a href="#home" class="active">Dashboard</a>
+			<a href="#maps" data-scroll="translucent">Maps</a>
+			<a href="#chat">Chat</a>
+			<a href="#todo">To-do</a>
+		</div>
+		<div id="modals">
+			<section id="about">Another <strong>view</strong></section>
+		</div>
+	</section>
+</body>
+</html>
